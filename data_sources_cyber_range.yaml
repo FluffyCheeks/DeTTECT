@@ -1,0 +1,340 @@
+version: 1.1
+file_type: data-source-administration
+name: cyber_range
+domain: enterprise-attack
+systems:
+  - applicable_to: default
+    platform:
+      - all
+  - applicable_to: Windows server
+    platform:
+      - all
+data_sources:
+  - data_source_name: Process Termination
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '5: Process terminated.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Network Connection Creation
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '3: Network connection.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Module Load
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '7: Image loaded.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Windows Registry Key Deletion
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-06T00:00:00.000Z
+        products:
+          - '12: RegistryEvent (Object create and delete).'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Command Execution
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-02T00:00:00.000Z
+        products:
+          - '1: Process Creation.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: File Deletion
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-02T00:00:00.000Z
+        products:
+          - '23: File Delete archived.'
+          - '26: File Delete logged.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Process Metadata
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '5: Process terminated.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Named Pipe Metadata
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '18: PipeEvent (Pipe Connected).'
+          - '17: PipeEvent (Pipe Created).'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Host Status
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '4: Sysmon service state changed.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: WMI Creation
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-06T00:00:00.000Z
+        products:
+          - '19: WmiEvent (WmiEventFilter activity detected).'
+          - '20: WmiEvent (WmiEventConsumer activity detected).'
+          - '21: WmiEvent (WmiEventConsumerToFilter activity detected).'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Windows Registry Key Creation
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '12: RegistryEvent (Object create and delete).'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Service Metadata
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '4: Sysmon service state changed.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Process Access
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '10: Process Access.'
+          - '10: ProcessAccess'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Driver Load
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-03T00:00:00.000Z
+        products:
+          - '6: Driver loaded.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Process Modification
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '8: CreateRemoteThread.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Process Creation
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '1: Process Creation.'
+          - '8: CreateRemoteThread.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: OS API Execution
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '8: CreateRemoteThread.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: File Modification
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-04T00:00:00.000Z
+        products:
+          - '2: A process changed a file creation time.'
+          - '11: FileCreate.'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Windows Registry Key Modification
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-06T00:00:00.000Z
+        products:
+          - '13: RegistryEvent (Value Set).'
+          - '14: RegistryEvent (Key and Value Rename).'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: File Creation
+    data_source:
+      - applicable_to:
+          - Windows server
+        date_registered: 2023-03-01T00:00:00.000Z
+        date_connected: 2023-03-02T00:00:00.000Z
+        products:
+          - '11: FileCreate'
+        available_for_data_analytics: true
+        comment: 'Auto added by Dettectinator. TODO: Check data quality scores, default values used.'
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1

@@ -1,0 +1,74 @@
+version: 1.1
+file_type: data-source-administration
+name: example
+domain: enterprise-attack
+systems:
+  - applicable_to: default
+    platform:
+      - all
+data_sources:
+  - data_source_name: Network Traffic Flow
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2023-02-08T00:00:00.000Z
+        date_connected: null
+        products:
+          - Suricata
+          - Zeek
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 0
+          data_field_completeness: 0
+          timeliness: 0
+          consistency: 0
+          retention: 0
+  - data_source_name: Command Execution
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2023-02-08T00:00:00.000Z
+        date_connected: null
+        products:
+          - Windows Event Log
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Process Creation
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2023-02-08T00:00:00.000Z
+        date_connected: null
+        products:
+          - OSQuery
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Windows Registry Key Creation
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2023-02-08T00:00:00.000Z
+        date_connected: null
+        products:
+          - OSQuery
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
